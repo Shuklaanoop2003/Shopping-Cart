@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Digital Marketing</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="nav">
+            <div class="navTop">
+                <div class="navItem">
+                    <h2>Shopping Cart <i class="bi bi-cart4"></i> </h2>
+                    <!-- <img decoding="async" src="./img/sneakers.png" alt=""> -->
+                </div>
+                <div class="navItem">
+                    <div class="search" style="width: 250px;">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <!-- <i class="bi bi-search"></i>  -->
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navBottom">
+                <h3 class="menuItem" sty><a href="#" style="color: white; text-decoration: none;">Home</a></h3>
+                <h3 class="menuItem" sty><a href="#" style="color: white; text-decoration: none;">Mobiles</a></h3>
+                <h3 class="menuItem" sty><a href="#" style="color: white; text-decoration: none;">Fashion</a></h3>
+                <h3 class="menuItem" sty><a href="#" style="color: white; text-decoration: none;">Electiricity</a></h3>
+
+                <li class="nav-item dropdown" style="list-style: none; border: none;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="font-size: 25px;">
+                        More Items
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Beauty</a></li>
+                        <li><a class="dropdown-item" href="#">Furniture</a></li>
+                        <li><a class="dropdown-item" href="#">Books</a></li>
+                        <li><a class="dropdown-item" href="#">Grocery</a></li>
+                        <li><a class="dropdown-item" href="#">Appliances</a></li>
+                        <li><a class="dropdown-item" href="#">More</a></li>
+                    </ul>
+                </li>
+            </div>
+
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section-left">
+            <h2 style="text-align: center; margin: 10px; padding: 20px;  background-color: rgb(216, 214, 214);">Products <i
+                    class="bi bi-shop-window"></i></h2>
+            <ul>
+                <li class="product">
+                    <div class="product-image">
+                        <img src="I Phone.jpg" alt="Product 1" style="height: 250px; width: 190px;" >
+                    </div>
+                    <div class="product-description">
+                        <!-- <p>Product 1 Description</p> -->
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur repellendus
+                            dolorum animi libero voluptates excepturi beatae est totam a incidunt nam, quod ipsam eaque
+                            delectus perspiciatis rem aliquid nemo?</p>
+                    </div>
+                    <div class="product-details">
+                        <h3>iPhone 14 Pro Max</h3>
+                        <p>₹127999</p>
+                        <button class="add-to-cart" data-name="iPhone 14 Pro Max" data-price="127999">Add to Cart</button>
+                    </div>
+                </li>
+
+                <li class="product">
+                    <div class="product-image">
+                        <img src="HeadPhone.jpg" alt="Product 2" style="height: 250px; width: 250px;" >
+                    </div>
+                    <div class="product-description">
+                        <!-- <p>Product 1 Description</p> -->
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur repellendus
+                            dolorum animi libero voluptates excepturi beatae est totam a incidunt nam, quod ipsam eaque
+                            delectus perspiciatis rem aliquid nemo?</p>
+                    </div>
+                    <div class="product-details">
+                        <h3>Gaming Head Phone</h3>
+                        <p>₹999</p>
+                        <button class="add-to-cart" data-name="Gaming Head Phone" data-price="999">Add to Cart</button>
+                    </div>
+                </li>
+
+                <li class="product">
+                    <div class="product-image">
+                        <img src="Girl Dress.jpg" alt="Product 3" style="height: 250px; width: 250px;">
+                    </div>
+                    <div class="product-description">
+                        <!-- <p>Product 1 Description</p> -->
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur repellendus
+                            dolorum animi libero voluptates excepturi beatae est totam a incidunt nam, quod ipsam eaque
+                            delectus perspiciatis rem aliquid nemo?</p>
+                    </div>
+                    <div class="product-details">
+                        <h3>Girls Dress</h3>
+                        <p>₹1500</p>
+                        <button class="add-to-cart" data-name="Girls Dress" data-price="1500">Add to Cart</button>
+                    </div>
+                </li>
+
+                <li class="product">
+                    <div class="product-image">
+                        <img src="chair.jpg" alt="Product 4">
+                    </div>
+                    <div class="product-description">
+                        <!-- <p>Product 1 Description</p> -->
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum consequatur repellendus
+                            dolorum animi libero voluptates excepturi beatae est totam a incidunt nam, quod ipsam eaque
+                            delectus perspiciatis rem aliquid nemo?</p>
+                    </div>
+                    <div class="product-details">
+                        <h3>Chair</h3>
+                        <p>₹2000</p>
+                        <button class="add-to-cart" data-name="Chair" data-price="2000">Add to Cart</button>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <section class="section-right">
+            <h2 style="text-align: center; margin: 10px; padding: 20px; background-color: rgb(216, 214, 214);">Cart <i
+                    class="bi bi-cart-fill"></i></h2>
+            <ul class="cart-items"> </ul>
+            <p class="cart-total-price" style="color: white; "></p>
+            <button id="checkout-btn" class="checkout-btn">Checkout</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="#">Company</a></li>
+                    <li class="fListItem"><a href="#">Contact</a></li>
+                    <li class="fListItem"><a href="#">Careers</a></li>
+                    <li class="fListItem"><a href="#">Affiliates</a></li>
+                    <li class="fListItem"><a href="#">Stores</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="#">Support</a></li>
+                    <li class="fListItem"><a href="#">Refund</a></li>
+                    <li class="fListItem"><a href="#">FAQ</a></li>
+                    <li class="fListItem"><a href="#">Feedback</a></li>
+                    <li class="fListItem"><a href="#">Stories</a></li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem"><a href="#">Home</a></li>
+                    <li class="fListItem"><a href="#">Mobile</a></li>
+                    <li class="fListItem"><a href="#">Fashion</a></li>
+                    <li class="fListItem"><a href="#">Electiricity</a></li>
+                    <li class="fListItem"><a href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href="https://www.linkedin.com/feed/" class="fIcon">
+                        <i class="bi bi-linkedin a"></i>
+                    </a>
+                    <a href="https://github.com/Shuklaanoop2003" class="fIcon">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shuklaanoop2003/" class="fIcon">
+                        <i class="bi bi-instagram"></i> </a>
+                    <a href="https://www.facebook.com/" class="fIcon">
+                        <i class="bi bi-facebook"></i> </a>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Anoop Shukla. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

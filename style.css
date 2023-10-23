@@ -1,0 +1,347 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply some basic styling to header, main, and footer */
+.header, .main, .footer {
+    padding: 10px;
+}
+
+.menuItem.active {
+    /* color: #f8b400; Change the color for active state */
+    font-weight: 600; /* Increase font weight for active state */
+}
+
+.header {
+    background-color: #232c5b;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* nav */
+nav {
+    /* background-color: #111; */
+    background-color: #232c5b;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search {
+    display: flex;
+    /* background-color: gray; */
+    background-color: #232c5b;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .searchInput::placeholder {
+    color: lightgray;
+  }
+
+  /* #navBarSearchForm input[type=text]{width:10px !important;} */
+
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menuItem {
+    margin-right: 25px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+  }
+
+
+/* Add a hover effect on the dropdown menu items */
+.dropdown-menu a:hover {
+    color: #4e4e4e; /* Change the text color on hover */
+    transition: color 0.3s; /* Add a smooth transition effect for color change */
+
+    background-color: #d9ff00; /* Change the background color on hover */
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.products, .cart {
+	float: left;
+	width: 50%;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Apply a slight lift effect on hover */
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Add this CSS for product images */
+.products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+li {
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+/* .cart-items li {
+	display: flex;
+	justify-content: space-between;
+    margin-left: -20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+} */
+
+.total {
+	font-weight: lighter;
+}
+
+.cart-total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.checkout {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.checkout-btn {
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+/* Added styles */
+.product , .cart-items li{
+    display: flex;
+    border: 1px solid #ccc;
+    margin-left: -20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for products */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition */
+    cursor: pointer;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-description {
+    flex: 1;
+    padding-right: 10px;
+    margin-left: 20px; /* Add margin to create space between product image and description */
+
+}
+
+.product-description p {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.section-left, .section-right {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.section-left {
+    flex: 2; /* Increase the flex value */
+    background-color: #232c5b;
+}
+
+.section-right {
+    flex: 1; /* Decrease the flex value */
+    background-color: #232c5b;
+    
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    background-color: #232c5b;
+    color: white;
+    padding: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s; /* Add a smooth transition effect for color change */
+}
+
+.footer a:hover {
+    color: #09ff00; /* Change color on hover */
+}
+
+.footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+    margin: none;
+  }
+  
+  .fListItem , a{
+    margin-top: 15px;
+    color: gray;
+    cursor: pointer;
+    border: none; /* Removed the border */
+    padding: 0; /* Removed padding */
+  }
+  
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 90px; 
+
+    @media (max-width: 768px) {
+        padding: 50px; /* Reduce padding for smaller screens */
+        align-items: center; /* Center items on smaller screens */
+        margin-left: 1px; 
+
+    }
+  }
+    
+  .fIcons{
+    display: flex;
+    gap: 10px; /* Add some gap between icons */
+
+    @media (max-width: 768px) {
+        margin-top: 10px; /* Reduce margin on smaller screens */
+        justify-content: center; /* Center icons on smaller screens */
+    }
+    
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    /* margin-right: 10px; */
+    @media (max-width: 768px) {
+        width: 16px; /* Reduce icon size on smaller screens */
+        height: 16px;
+  }
+}
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+        text-align: center; /* Center text on smaller screens */
+        margin-top: 10px; /* Reduce margin on smaller screens */
+  }
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .navTop, .navBottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menuItem {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .section-left, .section-right {
+        width: 100%;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center align text */
+        padding: 20px; /* Adjust padding for better spacing */
+
+    }
+
+    .product-image, .product-description, .product-details {
+        padding: 10px 0;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
